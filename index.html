@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid jarak-atas">
+        <div class="gameboard">
+            <div id="before-game-display" class="child-content stack-top">
+                <div class="row mt-5">
+                    <div class="col text-center mb-5">
+                        <button class="button" id="play-button" onclick="play()">
+                            <h1 id="text-play" class="font-besar">Play!</h1>
+                            <h6 class="text-abu-abu">created by @msyafrisuryam</h6>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="during-game-display" class="child-content">
+                <div class="row mt-5">
+                    <div class="col text-center mb-5">
+                        <h1 class="font-besar">Round <span id="textRound">1</span></h1>
+                        <h4 class="text-abu-abu">Count down time : <span id="timer">5</span></h4>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-6 mx-auto text-center">
+                        <h1 class="mb-3">You</h1>
+                        <h4 class="mb-4 text-abu-abu">take your pick</h4>
+                        <ul>
+                            <li><button type="button" id="kertas"><img src=" img/kertas.png" class="membesar"
+                                        alt=""></button></li>
+                            <li><button type="button" id="batu"><img src=" img/batu.png" alt=""></button></li>
+                            <li><button type="button" id="gunting"><img src=" img/gunting.png" alt=""></button>
+                            </li>
+                        </ul>
+                        <h3><span class="text-abu-abu">Score : </span><span id="scoreKu">0</span></h3>
+                    </div>
+
+                    <div class="col-6 mx-auto text-center">
+                        <h1 class="mb-3">Computer</h1>
+                        <h4 class="text-abu-abu">waiting for the opponent</h4>
+                        <img src="img/kucing.gif" width="400" height="300" alt="">
+                        <h3><span class="text-abu-abu">Score : </span><span id="scoreKom">0</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

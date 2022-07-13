@@ -1,0 +1,72 @@
+body {
+    background-color: #e7dfdd;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.stack-top h1:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+    color: red;
+}
+.gameboard{
+    position: relative;
+    margin: 20px;
+}
+.child-content{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;  /* for demo purpose  */
+}
+.stack-top{
+    z-index: 9;
+    margin-top: 250px;
+}
+.jarak-atas {
+    margin-top: 100px;
+}
+
+.font-besar {
+    font-size: 60px;
+}
+
+.text-putih {
+    color: white;
+}
+.text-abu-abu{
+    color: #808080;
+}
+/* Gambar */
+ul {
+    padding: 0;
+    margin: 50px 20px;
+    list-style: none;
+}
+ul li {
+    margin: 5px;
+    display: inline-block;
+}
+ul li a {
+    padding: 5px;
+    display: inline-block;      
+    
+}
+ul li button img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+ul li button:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
